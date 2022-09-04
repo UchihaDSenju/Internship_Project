@@ -1,0 +1,96 @@
+
+.cont{
+    display: flex;
+}
+.navitems{
+    display: inline;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 5 ;
+}
+body{
+    margin: 10px;
+    font-weight: bold;
+}
+nav{
+    background-color: rgb(121, 6, 6) ;
+}
+.batt2{
+    position: relative;
+    bottom: 35px;
+}
+.batt3{
+    position: relative;
+    top: 16.5px;
+}
+.serv{
+    display: flex;
+    justify-content: space-around;
+}
+.s1{
+    border-right: 1px solid black;
+}
+.s2{
+    border-left: 1px solid black;
+}
+.cont{
+    width:35%;
+    border-radius: 15px;
+    padding: 5px;
+}
+#services{
+    padding: 10px 0;
+}
+.abt{
+    margin-left: 40% ;
+}
+.nav-items{
+    display: flex;
+    text-align: center;
+    font-size: large;
+}
+.navit{
+    margin: 5px 20px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 100%;
+    padding: 5px;
+}
+.navit:hover{
+    color: black;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 600px){
+    .batt3{
+        position: relative;
+        top: 0;
+    }
+    .batt2{
+        position: relative;
+        bottom:5px;
+    }
+    .serv{
+        flex-direction: column;
+    }
+    .cont{
+        width: 98%;
+        margin: 3px;
+    }
+    .navitems, .nav-items{
+        flex-direction: column;
+    }
+    .abt{
+        margin-left: 0%;
+    }
+    header{
+        position: relative;
+    }
+}
